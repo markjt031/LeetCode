@@ -66,7 +66,6 @@ var mergeTwoLists = function(list1, list2) {
         if (listOnePointer.val<listTwoPointer.val){
             current.next=new ListNode(listOnePointer.val);
             current=current.next
-            console.log(listOnePointer.val);
             if (listOnePointer.next!==null){
                 listOnePointer=listOnePointer.next
             }
@@ -78,7 +77,6 @@ var mergeTwoLists = function(list1, list2) {
         if (listOnePointer.val>listTwoPointer.val){
             current.next=new ListNode(listTwoPointer.val);
             current=current.next;
-            console.log(listTwoPointer.val)
             
             if (listTwoPointer.next!==null){
                 listTwoPointer=listTwoPointer.next
