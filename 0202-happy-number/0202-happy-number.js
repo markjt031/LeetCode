@@ -15,7 +15,6 @@ var isHappy = function(n) {
             }
             else {
                 badSums.push(sum)
-                console.log(badSums)
                 n=sum;
                 sum=0
             }
