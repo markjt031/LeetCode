@@ -34,7 +34,6 @@ var maxPoints = function(points) {
             } 
         }
     }
-    console.log(lines)
     let max=0;
     for (line in lines){
         if (lines[line].length>max){
