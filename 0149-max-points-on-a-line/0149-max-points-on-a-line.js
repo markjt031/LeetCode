@@ -8,16 +8,17 @@ var maxPoints = function(points) {
         return 1;
     }
     let line=""
+    let slope=""
+    let yint=""
     for (let i=0; i<points.length; i++){
-        
         for (let j=0; j<points.length; j++){
             if (points[i]!==points[j]){
                 if (points[i][0]-points[j][0]===0){
                     line=`x=${points[i][0]}`
                 }
                 else{
-                    let slope=(points[i][1]-points[j][1])/(points[i][0]-points[j][0]);
-                    let yint=(points[i][1]-slope*points[i][0]);
+                    slope=(points[i][1]-points[j][1])/(points[i][0]-points[j][0]);
+                    yint=(points[i][1]-slope*points[i][0]);
                     line=`y=${slope}*x+${yint}`
                 }
                 if (lines[line]){
