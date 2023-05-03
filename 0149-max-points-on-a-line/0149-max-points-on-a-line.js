@@ -7,10 +7,10 @@ var maxPoints = function(points) {
     if (points.length===1){
         return 1;
     }
+    let line=""
     for (let i=0; i<points.length; i++){
-        let line=""
+        
         for (let j=0; j<points.length; j++){
-            
             if (points[i]!==points[j]){
                 if (points[i][0]-points[j][0]===0){
                     line=`x=${points[i][0]}`
