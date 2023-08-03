@@ -4,9 +4,6 @@
  * @return {boolean[]}
  */
 var kidsWithCandies = function(candies, extraCandies) {
-    let moreCandy=candies.map((candy)=>{
-        return candy+extraCandies
-    })
     let max=0
     let bools=[]
     for (let i=0; i<candies.length; i++){
@@ -14,8 +11,8 @@ var kidsWithCandies = function(candies, extraCandies) {
             max=candies[i]
         }
     }
-    for (let i=0; i<moreCandy.length;i++){
-        bools.push(moreCandy[i]>=max)
+    for (let i=0; i<candies.length;i++){
+        bools.push(candies[i]+extraCandies>=max)
     }
     return bools
 };
