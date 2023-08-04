@@ -3,12 +3,11 @@
  * @return {string}
  */
 var reverseWords = function(s) {
-    let noWhiteSpace=s.trim()
-    let array=noWhiteSpace.split(" ")
+    let array=s.trim().split(" ")
     let output=[]
     for (let i=array.length-1; i>=0; i--){
         if (array[i].trim().length>0){
-            output.push(array[i].trim())
+            output.push(array[i])
         }
     }
     return output.join(' ')
