@@ -33,6 +33,4 @@ var productExceptSelf = function(nums) {
        output.push(left[i]*right[i])
    }
    return output
-    
-    
 };
